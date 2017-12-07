@@ -45,6 +45,8 @@ $modulos = array(
 $app = new Silex\Application();
 $app['debug'] = DEBUG;
 
+$_SERVER['REQUEST_URI'] = rtrim($_SERVER['REQUEST_URI'], '/');
+
 // Inicia os controllers
 core_load_modules($modulos, $app);
 

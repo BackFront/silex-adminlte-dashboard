@@ -13,7 +13,6 @@ namespace Modules\Module_tpl\Controller {
 
         public function __construct(\Silex\Application $app)
         {
-            // Roda as rotas
             $this->routes($app);
         }
 
