@@ -28,10 +28,6 @@ namespace Modules\Module_tpl\Controller {
             $app->get("/{$this->uri}", function(){
                 return self::viewIndex();
             });
-
-            $app->mount("/{$this->uri}/users", function($users){
-                return self::viewIndex();
-            });
         }
 
         public static function viewIndex()
